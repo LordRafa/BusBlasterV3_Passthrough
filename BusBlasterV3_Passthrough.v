@@ -36,4 +36,12 @@ module BusBlasterV3_Passthrough(
 
 );
 
+	assign TCK = FT_AD0_TCK;
+	assign TDI = FT_AD1_TDI;
+	assign TMS = FT_AD3_TMS;
+	assign FT_AD2_TDO = TDO;
+
+	assign JP2_P19_LED = FT_AC0_GPIOH0;
+	assign FT_AC1_GPIOH1 = BUTTON;
+
 endmodule
